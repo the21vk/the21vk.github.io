@@ -1437,6 +1437,8 @@ input, select, textarea {
 		margin-bottom: 2em;
 	}
 
+	a {text-decoration:none;}
+
 /* Table */
 
 	table {
