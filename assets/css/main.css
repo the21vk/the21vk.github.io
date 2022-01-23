@@ -1437,7 +1437,7 @@ input, select, textarea {
 		margin-bottom: 2em;
 	}
 
-	a {text-decoration:none;}
+	a {text-decoration:none; color: #8b5e79;}
 
 /* Table */
 
