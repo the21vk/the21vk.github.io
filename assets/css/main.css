@@ -1436,7 +1436,7 @@ input, select, textarea {
 	p, ul, ol, dl, table, blockquote, form {
 		margin-bottom: 2em;
 	}
-	p {font-size: 0.6em;}
+	/*p {font-size: 0.6em;}*/
 	a {text-decoration:none; color: #777777;}
 
 /* Table */
