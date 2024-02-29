@@ -240,7 +240,7 @@ literal "false"
 \shape default
  
 \begin_inset Graphics
-	filename ../images/me.jpg
+	filename /run/user/1000/doc/30d36b1/VK_Profile_Pic.jpeg
 	lyxscale 40
 	width 3.3cm
 
@@ -638,7 +638,7 @@ Codes
 
 Used:
 \noun default
- Dedalus (Python), Pencil-Code (Fortran)
+ PLUTO Code (C,C++), Dedalus (Python), Pencil-Code (Fortran)
 \end_layout
 
 \begin_layout Labeling
@@ -652,20 +652,7 @@ Other
 
 Tools:
 \noun default
- Python, Mathematica, MATLAB, 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\end_layout
-
-\end_inset
-
-
+ Python, Mathematica
 \begin_inset Newline newline
 \end_inset
 
@@ -838,6 +825,66 @@ status open
 
 \backslash
 begin{etaremune}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 42nd meeting of the Astronomical Society of India (ASI)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Jan-Feb 2024 
+\backslash
+
+\backslash
+IISc, ISRO, JNP
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Presented a poster titled 
+\backslash
+emph{'Exploring the Tearing Mode Instability in 3D using Direct Numerical
+ MHD Simulations'}.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item Field Theory and Turbulence
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+December 2023
+\backslash
+
+\backslash
+ICTS
 \end_layout
 
 \begin_layout Plain Layout
