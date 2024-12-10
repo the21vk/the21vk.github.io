@@ -20,12 +20,7 @@
 <body>
   <div id="container"></div>
   <script>
-    // Force vtk.js to use WebGL
-    vtk.Rendering.Misc.vtkRenderWindow.newInstance({
-      useWebGPU: false, // Explicitly disable WebGPU
-    });
-
-    // Initialize the rendering environment
+    // Initialize the rendering environment using WebGL explicitly
     const fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
       container: document.querySelector('#container'),
     });
@@ -35,7 +30,7 @@
     // Create a reader for the VTP file
     const reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
     reader
-      .setUrl('https://the21vk.github.io/test_1.vtp') // Update the path if the file location changes
+      .setUrl('https://the21vk.github.io/test_1.vtp') // Ensure the file path is correct
       .then(() => {
         const polyData = reader.getOutputData(0);
 
