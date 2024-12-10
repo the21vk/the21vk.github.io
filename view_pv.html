@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vtk.js Visualization</title>
-    <script type="module">
-        import vtkFullScreenRenderWindow from 'https://cdn.jsdelivr.net/npm/@kitware/vtk.js@24.0.0/Rendering/Misc/FullScreenRenderWindow.js';
-        import vtkXMLPolyDataReader from 'https://cdn.jsdelivr.net/npm/@kitware/vtk.js@24.0.0/IO/XML/XMLPolyDataReader.js';
-
-        // Set up render window
-        const fullScreenRenderer = vtkFullScreenRenderWindow.newInstance();
-        const renderer = fullScreenRenderer.getRenderer();
-        const renderWindow = fullScreenRenderer.getRenderWindow();
-
-        // Load VTP file
-        const reader = vtkXMLPolyDataReader.newInstance();
-        reader.setUrl('./test_1.vtp').then(() => {
-            const polydata = reader.getOutputData(0);
-            const mapper = vtkMapper.newInstance();
-            const actor = vtkActor.newInstance();
-
-            mapper.setInputData(polydata);
-            actor.setMapper(mapper);
-
-            renderer.addActor(actor);
-            renderer.resetCamera();
-            renderWindow.render();
-        });
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streamlines Visualization</title>
 </head>
 <body>
+  <div id="container"></div>
+  <script type="module">
+    // Import vtk.js modules from CDN
+    import vtkFullScreenRenderWindow from 'https://cdn.jsdelivr.net/npm/@kitware/vtk.js@24.0.0/Rendering/Misc/FullScreenRenderWindow.js';
+    import vtkXMLPolyDataReader from 'https://cdn.jsdelivr.net/npm/@kitware/vtk.js@24.0.0/IO/XML/XMLPolyDataReader.js';
+    import vtkActor from 'https://cdn.jsdelivr.net/npm/@kitware/vtk.js@24.0.0/Rendering/Core/Actor.js';
+    import vtkMapper from 'https://cdn.jsdelivr.net/npm/@kitware/vtk.js@24.0.0/Rendering/Core/Mapper.js';
+
+    // Set up rendering
+    const fullScreenRenderer = vtkFullScreenRenderWindow.newInstance({
+      container: document.querySelector('#container'),
+    });
+    const renderer = fullScreenRenderer.getRenderer();
+    const renderWindow = fullScreenRenderer.getRenderWindow();
+
+    // Read the VTP file
+    const reader = vtkXMLPolyDataReader.newInstance();
+    reader.setUrl('streamlines.vtp').then(() => {
+      const polydata = reader.getOutputData(0);
+      const mapper = vtkMapper.newInstance();
+      const actor = vtkActor.newInstance();
+
+      // Connect the pipeline
+      mapper.setInputData(polydata);
+      actor.setMapper(mapper);
+
+      // Add the actor to the renderer
+      renderer.addActor(actor);
+      renderer.resetCamera();
+      renderWindow.render();
+    }).catch((error) => {
+      console.error('Error loading VTP file:', error);
+    });
+  </script>
 </body>
 </html>
