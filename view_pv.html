@@ -88,9 +88,11 @@
             debugLog('Creating mapper and actor...');
             const mapper = vtk.Rendering.Core.vtkMapper.newInstance();
             mapper.setInputData(polyData);
+            
 
             const actor = vtk.Rendering.Core.vtkActor.newInstance();
             actor.setMapper(mapper);
+            
 
             // Add actor to the renderer
             renderer.addActor(actor);
