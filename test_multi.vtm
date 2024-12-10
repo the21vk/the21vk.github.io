@@ -1,0 +1,11 @@
+<VTKFile type="vtkMultiBlockDataSet" version="1.0" byte_order="LittleEndian" header_type="UInt64">
+  <vtkMultiBlockDataSet>
+    <DataSet index="0" name="Tube2" file="test_multi/test_multi_0_0.vtp"/>
+    <DataSet index="1" name="Tube1" file="test_multi/test_multi_1_0.vtp"/>
+  </vtkMultiBlockDataSet>
+  <FieldData>
+    <DataArray type="Float64" Name="TimeValue" NumberOfTuples="1" format="binary" RangeMin="40" RangeMax="40">
+      CAAAAAAAAAAAAAAAAABEQA==
+    </DataArray>
+  </FieldData>
+</VTKFile>
