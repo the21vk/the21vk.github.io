@@ -33,7 +33,7 @@
 </head>
 <body>
   <div id="vtk-container"></div>
-  <div id="warning">WebGL is not supported on your device or browser. Please update your drivers or use a different browser.</div>
+  <div id="warning">WebGL is not supported on your device or browser. Please update your browser or device drivers.</div>
   <script>
     // Check for WebGL support
     function isWebGLAvailable() {
@@ -50,13 +50,15 @@
       document.getElementById('warning').style.display = 'block';
     } else {
       try {
-        // Initialize WebGL 1.0 explicitly
+        // Force vtk.js to use WebGL (disable WebGPU)
         const canvas = document.createElement('canvas');
         const context = canvas.getContext('webgl', { antialias: true });
-        if (!context) throw new Error('WebGL 1.0 context could not be initialized.');
+        if (!context) throw new Error('WebGL context could not be initialized.');
 
+        // Initialize WebGL rendering environment
         const fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
           container: document.querySelector('#vtk-container'),
+          useWebGPU: false, // Force vtk.js to use WebGL and disable WebGPU
         });
 
         const renderer = fullScreenRenderer.getRenderer();
