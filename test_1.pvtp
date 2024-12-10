@@ -1,0 +1,28 @@
+<VTKFile type="PPolyData" version="1.0" byte_order="LittleEndian" header_type="UInt64">
+  <PPolyData GhostLevel="1">
+    <FieldData>
+      <DataArray type="Float64" Name="TimeValue" NumberOfTuples="1" format="binary" RangeMin="40" RangeMax="40">
+        CAAAAAAAAAAAAAAAAABEQA==
+      </DataArray>
+    </FieldData>
+    <PPointData Vectors="b_vec">
+      <PDataArray type="Float64" Name="bx"/>
+      <PDataArray type="Float64" Name="by"/>
+      <PDataArray type="Float64" Name="bz"/>
+      <PDataArray type="Float64" Name="b_vec" NumberOfComponents="3"/>
+      <PDataArray type="Float64" Name="j_vec" NumberOfComponents="3"/>
+      <PDataArray type="Float64" Name="IntegrationTime"/>
+      <PDataArray type="Float64" Name="Vorticity" NumberOfComponents="3"/>
+      <PDataArray type="Float64" Name="Rotation"/>
+      <PDataArray type="Float64" Name="AngularVelocity"/>
+    </PPointData>
+    <PCellData>
+      <PDataArray type="Int32" Name="ReasonForTermination"/>
+      <PDataArray type="Int32" Name="SeedIds"/>
+    </PCellData>
+    <PPoints>
+      <PDataArray type="Float32" Name="Points" NumberOfComponents="3"/>
+    </PPoints>
+    <Piece Source="test_1/test_1_0.vtp"/>
+  </PPolyData>
+</VTKFile>
