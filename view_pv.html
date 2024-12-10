@@ -20,6 +20,11 @@
 <body>
   <div id="container"></div>
   <script>
+    // Force vtk.js to use WebGL
+    vtk.Rendering.Misc.vtkRenderWindow.newInstance({
+      useWebGPU: false, // Explicitly disable WebGPU
+    });
+
     // Initialize the rendering environment
     const fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
       container: document.querySelector('#container'),
