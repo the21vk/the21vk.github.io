@@ -20,15 +20,9 @@
 <body>
   <div id="container"></div>
   <script>
-    // Force WebGL initialization
-    vtk.Rendering.Misc.vtkRenderWindow.newInstance({
-      useWebGPU: false,
-    });
-
-    // Initialize the rendering environment using WebGL explicitly
+    // Initialize the rendering environment using WebGL (default backend)
     const fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
       container: document.querySelector('#container'),
-      background: [0.2, 0.3, 0.4], // Optional background color
     });
 
     const renderer = fullScreenRenderer.getRenderer();
@@ -60,4 +54,3 @@
 </body>
 </html>
 
-\
