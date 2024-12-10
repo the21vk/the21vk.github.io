@@ -4,43 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Streamlines Visualization</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    #container {
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
 </head>
 <body>
-
-  hello
   <div id="container"></div>
   <script type="module">
-    // Import vtk.js modules from CDN
+    // Import vtk.js modules from a reliable CDN
     import vtkFullScreenRenderWindow from 'https://cdn.jsdelivr.net/npm/@kitware/vtk.js@24.0.0/Rendering/Misc/FullScreenRenderWindow.js';
     import vtkXMLPolyDataReader from 'https://cdn.jsdelivr.net/npm/@kitware/vtk.js@24.0.0/IO/XML/XMLPolyDataReader.js';
     import vtkActor from 'https://cdn.jsdelivr.net/npm/@kitware/vtk.js@24.0.0/Rendering/Core/Actor.js';
     import vtkMapper from 'https://cdn.jsdelivr.net/npm/@kitware/vtk.js@24.0.0/Rendering/Core/Mapper.js';
 
-    // Set up rendering
+    // Initialize the rendering environment
     const fullScreenRenderer = vtkFullScreenRenderWindow.newInstance({
       container: document.querySelector('#container'),
     });
     const renderer = fullScreenRenderer.getRenderer();
     const renderWindow = fullScreenRenderer.getRenderWindow();
 
-    // Read the VTP file
+    // Load and render the VTP file
     const reader = vtkXMLPolyDataReader.newInstance();
-    reader.setUrl('streamlines.vtp').then(() => {
-      const polydata = reader.getOutputData(0);
-      const mapper = vtkMapper.newInstance();
-      const actor = vtkActor.newInstance();
+    reader
+      .setUrl('./test_1.vtp') // Ensure the file path is correct relative to index.html
+      .then(() => {
+        const polyData = reader.getOutputData(0);
 
-      // Connect the pipeline
-      mapper.setInputData(polydata);
-      actor.setMapper(mapper);
+        // Set up mapper and actor
+        const mapper = vtkMapper.newInstance();
+        mapper.setInputData(polyData);
 
-      // Add the actor to the renderer
-      renderer.addActor(actor);
-      renderer.resetCamera();
-      renderWindow.render();
-    }).catch((error) => {
-      console.error('Error loading VTP file:', error);
-    });
+        const actor = vtkActor.newInstance();
+        actor.setMapper(mapper);
+
+        // Add actor to the scene and render
+        renderer.addActor(actor);
+        renderer.resetCamera();
+        renderWindow.render();
+      })
+      .catch((error) => {
+        console.error('Error loading VTP file:', error);
+      });
   </script>
 </body>
 </html>
