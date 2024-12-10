@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Streamlines Visualization</title>
+  <title>vtk.js Streamlines Visualization</title>
   <style>
     body {
       margin: 0;
@@ -14,38 +14,34 @@
       height: 100vh;
     }
   </style>
+  <!-- Include the pre-bundled vtk.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/vtk.js@24.0.0/vtk.min.js"></script>
 </head>
 <body>
   <div id="container"></div>
-  <script type="module">
-    // Import vtk.js modules from a reliable CDN
-    import vtkFullScreenRenderWindow from 'https://cdn.jsdelivr.net/npm/@kitware/vtk.js@24.0.0/Rendering/Misc/FullScreenRenderWindow.js';
-    import vtkXMLPolyDataReader from 'https://cdn.jsdelivr.net/npm/@kitware/vtk.js@24.0.0/IO/XML/XMLPolyDataReader.js';
-    import vtkActor from 'https://cdn.jsdelivr.net/npm/@kitware/vtk.js@24.0.0/Rendering/Core/Actor.js';
-    import vtkMapper from 'https://cdn.jsdelivr.net/npm/@kitware/vtk.js@24.0.0/Rendering/Core/Mapper.js';
-
+  <script>
     // Initialize the rendering environment
-    const fullScreenRenderer = vtkFullScreenRenderWindow.newInstance({
+    const fullScreenRenderer = vtk.Rendering.Misc.vtkFullScreenRenderWindow.newInstance({
       container: document.querySelector('#container'),
     });
     const renderer = fullScreenRenderer.getRenderer();
     const renderWindow = fullScreenRenderer.getRenderWindow();
 
-    // Load and render the VTP file
-    const reader = vtkXMLPolyDataReader.newInstance();
+    // Create a reader for the VTP file
+    const reader = vtk.IO.XML.vtkXMLPolyDataReader.newInstance();
     reader
-      .setUrl('https://the21vk.github.io/test_1.vtp') // Ensure the file path is correct relative to index.html
+      .setUrl('https://the21vk.github.io/test_1.vtp') // Update the path if the file location changes
       .then(() => {
         const polyData = reader.getOutputData(0);
 
-        // Set up mapper and actor
-        const mapper = vtkMapper.newInstance();
+        // Set up the mapper and actor
+        const mapper = vtk.Rendering.Core.vtkMapper.newInstance();
         mapper.setInputData(polyData);
 
-        const actor = vtkActor.newInstance();
+        const actor = vtk.Rendering.Core.vtkActor.newInstance();
         actor.setMapper(mapper);
 
-        // Add actor to the scene and render
+        // Add actor to the renderer and render
         renderer.addActor(actor);
         renderer.resetCamera();
         renderWindow.render();
