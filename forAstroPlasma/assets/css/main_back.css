@@ -2468,9 +2468,9 @@ input, select, textarea {
 
 			.custom-card {
 				border: 1px solid rgba(255, 255, 255, 0.35);
-				border-radius: 0%;
+				border-radius: 20px;
 				overflow: hidden;
-				max-width: 300px;
+				max-width: 200px;
 				text-align: center;
 				background-color: rgba(255, 255, 255, 0.1);
 				margin: 10px auto;
@@ -2480,7 +2480,7 @@ input, select, textarea {
 				width: 100%;
 				height: auto;
 				border-bottom: 1px solid rgba(255, 255, 255, 0.35);
-				border-radius: 50%;
+				border-radius: 80px;
 
 			  }
 			  
@@ -2721,8 +2721,6 @@ input, select, textarea {
 
 	section.special, article.special {
 		text-align: center;
-		justify-content: center; /* Horizontal centering */
-  		align-items: center;
 	}
 
 	header.major {
@@ -2886,62 +2884,46 @@ input, select, textarea {
 /* Features */
 
 	/* Grid container for rectangular images */
-	.grid-container {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
-		justify-content: center;
-		width: calc(100% + 2em);
-		margin: 0 0 3em 0em;
-		padding: 0;
-		list-style: none;
-	  }
-	  
-
-	
-	
-	.grid-item {
-		position: relative;
-		overflow: hidden; 
-	}
-	
-	.grid-item img {
-		display: block;
-		width: 100%;
-		height: auto;
-	}
-	
-	.text-overlay {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		text-align: center;
-		color: #ffffff;
-		background: rgba(0, 0, 0, 1); /* Semi-transparent background for better readability */
-		padding: 10px 20px;
-		border-radius: 20px; /* Optional: for rounded corners */
-	}
-	
-	.text-overlay strong {
-		display: block;
-		font-size: 1.5em;
-	}
-	
-	.text-overlay span {
-		display: block;
-		font-size: 1em;
-		margin-top: 5px;
-	}
-	
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Equal width items */
+	gap: 0; /* No gap between items */
+  }
+  
+  .grid-item {
+	position: relative;
+	overflow: hidden; /* Ensure text doesn't go outside the image */
+  }
+  
+  .grid-item img {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+  
+  .text-overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+	padding: 10px 20px;
+	border-radius: 8px; /* Optional: for rounded corners */
+  }
+  
+  .text-overlay strong {
+	display: block;
+	font-size: 1.5em;
+  }
+  
+  .text-overlay span {
+	display: block;
+	font-size: 1em;
+	margin-top: 5px;
+  }
+  
 
 	.features {
 		display: -moz-flex;
@@ -3009,83 +2991,6 @@ input, select, textarea {
 		}
 
 /* Statistics */
-		/* Statistics List */
-.statistics.with-images {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2em;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Individual List Item */
-.statistics.with-images li {
-  position: relative;
-  width: 120px; /* Fixed width for circular shapes */
-  height: 120px; /* Fixed height for circular shapes */
-  flex-shrink: 0;
-}
-
-/* Image Container */
-.image-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%; /* Circular shape */
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Images */
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image fills the circle */
-}
-
-/* Text Overlay */
-.text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-  padding: 5px 10px;
-  border-radius: 8px;
-  font-size: 0.9em;
-}
-
-/* Strong and Span Styles */
-.text-overlay strong {
-  display: block;
-  font-size: 1.2em;
-}
-
-.text-overlay span {
-  font-size: 0.8em;
-  margin-top: 2px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .statistics.with-images li {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@media (max-width: 480px) {
-  .statistics.with-images li {
-    width: 80px;
-    height: 80px;
-  }
-}
-
-
 
 	.statistics {
 		display: -moz-flex;
@@ -3585,7 +3490,7 @@ input, select, textarea {
 					font-size: 0.9em;
 				}
 
-		/* @media screen and (max-width: 100px) {
+		@media screen and (max-width: 736px) {
 
 			#nav {
 				display: none;
@@ -3595,7 +3500,7 @@ input, select, textarea {
 					padding-top: 0;
 				}
 
-		} */
+		}
 
 /* Main */
 
