@@ -82,7 +82,7 @@ input, select, textarea {
 		-ms-overflow-style: scrollbar;
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 300px) {
 
 		html, body {
 			min-width: 320px;
@@ -1558,7 +1558,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 300px) {
 
 			.row {
 				display: flex;
@@ -2649,7 +2649,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 300px) {
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
@@ -3078,7 +3078,7 @@ input, select, textarea {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 300px) {
   .statistics.with-images li {
     width: 80px;
     height: 80px;
@@ -3439,7 +3439,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 300px) {
 
 			#header {
 				padding: 3em 1.5em 0.1em 1.5em ;
@@ -3585,7 +3585,7 @@ input, select, textarea {
 					font-size: 0.9em;
 				}
 
-		@media screen and (max-width: 100px) {
+		@media screen and (max-width:300px) {
 
 			#nav {
 				display: none;
@@ -3910,7 +3910,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 300px) {
 
 			#main > .main {
 				padding: 3em 1.5em 1em 1.5em ;
@@ -4010,7 +4010,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 300px) {
 
 			#footer {
 				padding: 3em 1.5em 1em 1.5em ;
@@ -4018,7 +4018,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 300px) {
 
 			#footer {
 				padding: 2.5em 1em 0.5em 1em ;
@@ -4034,7 +4034,7 @@ input, select, textarea {
 		margin: 0 auto;
 	}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 300px) {
 
 			#wrapper {
 				max-width: calc(100% - 2em);
