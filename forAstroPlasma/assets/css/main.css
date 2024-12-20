@@ -3585,7 +3585,7 @@ input, select, textarea {
 					font-size: 0.9em;
 				}
 
-		/* @media screen and (max-width: 100px) {
+		@media screen and (max-width: 100px) {
 
 			#nav {
 				display: none;
@@ -3595,7 +3595,7 @@ input, select, textarea {
 					padding-top: 0;
 				}
 
-		} */
+		}
 
 /* Main */
 
