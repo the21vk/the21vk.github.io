@@ -100,11 +100,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #2b0262;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #88434b 15%,  #2b0262 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #88434b 15%,  #2b0262 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #88434b 15%,  #2b0262 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #88434b 15%,  #2b0262 85%);
+		background: #ffffff;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -121,7 +117,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: #585858;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -2587,7 +2583,7 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
-			width: calc(22% - 0em);
+			width: calc(33.33333% - 2.5em);
 			margin: 2.5em 0 0 2.5em;
 		}
 
@@ -2596,19 +2592,16 @@ input, select, textarea {
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
-				display: grid;
-				place-items: center;
-				aspect-ratio: 9 / 9; /* Replace with desired ratio, e.g., 1 / 1 for a square */
+				position: relative;
+				display: block;
+				width: 100%;
 				border-radius: 4px;
 				overflow: hidden;
-				transition: transform 0.5s ease;
 			}
 
 				.tiles article > .image img {
 					display: block;
 					width: 100%;
-					height: 100%;
-					object-fit: cover;
 				}
 
 				.tiles article > .image:before {
@@ -3174,7 +3167,7 @@ input, select, textarea {
 
 	#footer {
 		padding: 5em 0 6em 0 ;
-		background-color: #333333;
+		background-color: #f6f6f6;
 	}
 
 		#footer > .inner {
@@ -3212,7 +3205,7 @@ input, select, textarea {
 				margin-top: 5em;
 				list-style: none;
 				font-size: 0.8em;
-				color: rgba(255, 255, 255, 1);
+				color: rgba(88, 88, 88, 0.5);
 			}
 
 				#footer > .inner .copyright a {
@@ -3221,7 +3214,7 @@ input, select, textarea {
 
 				#footer > .inner .copyright li {
 					display: inline-block;
-					border-left: solid 1px rgba(255, 255, 255, 1);
+					border-left: solid 1px rgba(88, 88, 88, 0.15);
 					line-height: 1;
 					padding: 0 0 0 1em;
 					margin: 0 0 0 1em;
