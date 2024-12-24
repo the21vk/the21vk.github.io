@@ -52,7 +52,14 @@
 						<div class="inner">
 							<header>
 								<h1>Astrophysical Fluids and Plasma Astrophysics Group</h1>
-								<p>The group conducts research across various aspects of astrophysical fluids and plasmas, including dynamo action, magnetic reconnection, plasma turbulence, and accretion disk dynamics.</p>
+								<p>Welcome to our webpage. The fundamental themes of research we pursue include Magnetohydrodynamic (MHD) turbulence, astrophysical dynamos and magnetic reconnection. We apply lessons from these to understand the 
+									<ul>
+										<li>generation and sustenence of stellar, interstellar and inter-galactic magnetic fields; </li>
+										<li>accretion disks dynamics and associated jets;</li>
+										<li>cosmic magnetic field evolution;</li>
+										<li>non-thermal emmision from astrophysical sources;</li>
+									</ul>
+									</p>
 							</header>
 
 
@@ -180,6 +187,72 @@
 					</div>
 					<p>An HTML paragraph containing <md-span>*italic*</md-span> text.</p>
 
+					<div class="list-wrapper">
+						<ul class="list_new">
+						  <li class="item_new"><div class="content_new"><img class="img_car" src="images/chandru.png"></div></li>
+						  <li class="item_new"><div class="content_new"><img class="img_car" src="images/sandy.jpeg"></div></li>
+						  <li class="item_new"><div class="content_new">Item 3</div></li>
+						  <li class="item_new"><div class="content_new">Item 4</div></li>
+						  <li class="item_new"><div class="content_new">Item 5</div></li>
+						</ul>
+						<!-- We're calling `handleClick` with a direction argument when the buttons are clicked -->
+						<button onclick="handleClick('previous')" class="button button--previous" type="button">➜</button>
+						<button onclick="handleClick('next')" class="button button--next" type="button"><a class="icon brands style1 fa-solid fa-github"></a></button>
+					  </div>
+					  <script>
+						const list = document.querySelector(".list_new");
+						const items = document.querySelectorAll(".item_new");
+						const itemWidth = items[0].offsetWidth;
+						const totalItems = items.length;
+					
+						function handleClick(direction) {
+							if (direction === "previous") {
+								// If at the start, jump to the end
+								if (list.scrollLeft <= 0) {
+									list.scrollBy({ left: (totalItems-1)*itemWidth, behavior: "smooth" });
+								} else {
+									list.scrollBy({ left: -itemWidth, behavior: "smooth" });
+								}
+							} else {
+								// If at the end, jump to the start
+								if (list.scrollLeft >= itemWidth * (totalItems - 2)) {
+									list.scrollBy({ left: -(totalItems-1)*itemWidth, behavior: "smooth" }); // Jump to the first item
+								} else {
+									list.scrollBy({ left: itemWidth, behavior: "smooth" });
+								}
+							}
+					
+							// Pause auto-rotation after manual interaction
+							pauseAutoRotation();
+						}
+					
+						// Auto-rotation logic
+						let autoRotationInterval;
+					
+						function startAutoRotation() {
+							autoRotationInterval = setInterval(() => {
+								if (list.scrollLeft >= itemWidth * (totalItems - 2)) {
+									list.scrollBy({ left: -(totalItems-1)*itemWidth, behavior: "smooth" });
+								} else {
+									list.scrollBy({ left: itemWidth, behavior: "smooth" });
+								}
+							}, 3000); // Adjust timing as needed
+						}
+					
+						function pauseAutoRotation() {
+							clearInterval(autoRotationInterval);
+							setTimeout(startAutoRotation, 5000); // Restart auto-rotation after 5 seconds
+						}
+					
+						// Attach click event handlers
+						document.querySelector(".button--previous").addEventListener("click", () => handleClick("previous"));
+						document.querySelector(".button--next").addEventListener("click", () => handleClick("next"));
+					
+						// Start auto-rotation when the page loads
+						startAutoRotation();
+					</script>
+					
+					
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">

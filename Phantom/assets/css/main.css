@@ -1803,6 +1803,93 @@ input, select, textarea {
 
 	}
 
+
+
+	/* carousel */
+
+
+	.list_new {
+		display: flex;
+		gap: 8px;
+		padding: 16px;
+		width: 80vw;
+		list-style: none;
+		overflow-x: scroll;
+		scroll-snap-type: x mandatory;
+		/* Hide scrollbar in Firefox */
+		scrollbar-width: none;
+		/* Hide scrollbar in IE and Edge */
+		-ms-overflow-style: none;
+	  }
+
+	  /* Hide scrollbar in webkit */
+	.list_new::-webkit-scrollbar {
+		display: none;
+		}
+	  
+	  .item_new {
+		flex-shrink: 0;
+		width: 80%;
+		height: 50vh;
+		justify-content: center;
+		align-items: center;
+		/* background-color: #0FF; */
+	  
+		scroll-snap-align: center;
+	  }
+	  
+	  .content_new {
+		/* display: flex; */
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		width: 100%;
+	  
+		font-family: sans-serif;
+		font-size: 64px;
+		font-weight: bold;
+	  }
+
+	  .list-wrapper {
+		position: relative;
+    	display: flex;
+    	justify-content: center; /* Centers horizontally */
+    	align-items: center;    /* Centers vertically */
+    	/* height: 100vh;    */
+		
+	  }
+	  
+	  .button--previous,
+	  .button--next {
+		  position: absolute;
+		  /* bottom: 3rem; Position buttons near the bottom */
+		  transform: translateY(40%); /* Adjust slightly for vertical alignment */
+		  /* background-color: #fff; Example background for buttons */
+		  border: none;
+		  border-radius: 50%; /* Round button shape */
+		  padding: 10px; /* Adjust size of the buttons */
+		  cursor: pointer;
+		  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); Add some depth */
+	  }
+	  
+	  .button--previous {
+		  left: 15%; /* Position towards the left */
+		  transform: translate(-50%, -50%); 
+		/* transform: rotate(180deg); */
+	  }
+	  
+	  .button--next {
+		  right: 15%; /* Position towards the right */
+		  transform: translate(50%, -50%); /* Center horizontally */
+	  }
+
+	  .img_car {
+		width: 100%;          /* Make the image fit the parent's width */
+		height: 100%;         /* Make the image fit the parent's height */
+		object-fit: cover;    /* Ensure the image covers the container without distortion */
+		display: block;       /* Remove default inline spacing around images */
+	}
+
 /* Icon */
 
 	.icon {

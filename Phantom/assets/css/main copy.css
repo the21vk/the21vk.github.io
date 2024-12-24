@@ -100,7 +100,11 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background-color: #200049;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg,  #203a43 15% , #1e1f36 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg,  #203a43 15% , #1e1f36 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg,  #203a43 15% , #1e1f36 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg,  #203a43 15% , #1e1f36 85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -117,7 +121,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #585858;
+		color: #ffffff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -2583,7 +2587,7 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
-			width: calc(33.33333% - 2.5em);
+			width: calc(22% - 0em);
 			margin: 2.5em 0 0 2.5em;
 		}
 
@@ -2592,16 +2596,19 @@ input, select, textarea {
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
-				position: relative;
-				display: block;
-				width: 100%;
+				display: grid;
+				place-items: center;
+				aspect-ratio: 9 / 9; /* Replace with desired ratio, e.g., 1 / 1 for a square */
 				border-radius: 4px;
 				overflow: hidden;
+				transition: transform 0.5s ease;
 			}
 
 				.tiles article > .image img {
 					display: block;
 					width: 100%;
+					height: 100%;
+					object-fit: cover;
 				}
 
 				.tiles article > .image:before {
@@ -2619,7 +2626,7 @@ input, select, textarea {
 					height: 100%;
 					opacity: 1.0;
 					z-index: 1;
-					opacity: 0.8;
+					opacity: 0.5;
 				}
 
 				.tiles article > .image:after {
@@ -2635,7 +2642,7 @@ input, select, textarea {
 					left: 0;
 					width: 100%;
 					height: 100%;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
+					/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E"); */
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
@@ -3167,7 +3174,7 @@ input, select, textarea {
 
 	#footer {
 		padding: 5em 0 6em 0 ;
-		background-color: #f6f6f6;
+		background-color: #222222;
 	}
 
 		#footer > .inner {
@@ -3205,7 +3212,7 @@ input, select, textarea {
 				margin-top: 5em;
 				list-style: none;
 				font-size: 0.8em;
-				color: rgba(88, 88, 88, 0.5);
+				color: rgba(255, 255, 255, 1);
 			}
 
 				#footer > .inner .copyright a {
@@ -3214,7 +3221,7 @@ input, select, textarea {
 
 				#footer > .inner .copyright li {
 					display: inline-block;
-					border-left: solid 1px rgba(88, 88, 88, 0.15);
+					border-left: solid 1px rgba(255, 255, 255, 1);
 					line-height: 1;
 					padding: 0 0 0 1em;
 					margin: 0 0 0 1em;
