@@ -156,7 +156,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f2849e !important;
+			color: #f2849e ;
 		}
 
 	strong, b {
@@ -3422,3 +3422,21 @@ input, select, textarea {
 			}
 
 		}
+
+		.intext {
+			color: #ffffff; /* Default link color */
+			text-decoration: underline; /* No underline by default */
+		  }
+		  
+		  .intext:hover {
+			color: #f2849e; /* Color on hover */
+			text-decoration: underline; /* Optional underline on hover */
+		  }
+		  
+		  .intext:visited {
+			color: #ffffff; /* Color for visited links */
+		  }
+		  
+		  .intext:active {
+			color: #c86c82; /* Color when actively clicking the link */
+		  }
