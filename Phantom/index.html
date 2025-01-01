@@ -192,19 +192,28 @@
 						<ul class="list_new">
 						  <li class="item_new"><div class="content_new"><img class="img_car" src="images/chandru.png"></div></li>
 						  <li class="item_new"><div class="content_new"><img class="img_car" src="images/sandy.jpeg"></div></li>
-						  <li class="item_new"><div class="content_new">Item 3</div></li>
+						  <li class="item_new"><div class="content_new"><img class="img_car" src="images/forCarousel/2_tubes_vid.gif"></div></li>
 						  <li class="item_new"><div class="content_new">Item 4</div></li>
 						  <li class="item_new"><div class="content_new">Item 5</div></li>
 						</ul>
 						<!-- We're calling `handleClick` with a direction argument when the buttons are clicked -->
-						<button onclick="handleClick('previous')" class="button button--previous" type="button">PREV</button>
-						<button onclick="handleClick('next')" class="button button--next" type="button">Next</a></button>
+						<button onclick="handleClick('previous')" class="button button--previous" type="button">ᐊ</button>
+						<button onclick="handleClick('next')" class="button button--next" type="button">ᐅ</button>
 					  </div>
 					  <script>
 						const list = document.querySelector(".list_new");
-						const items = document.querySelectorAll(".item_new");
-						const itemWidth = items[0].offsetWidth;
+						let items = document.querySelectorAll(".item_new"); // Declare items as a variable for re-selection if needed
+						let itemWidth = items[0].offsetWidth; // Get initial item width
 						const totalItems = items.length;
+						let pageWidth = Math.floor(1 * window.innerWidth); // Initialize with the current viewport width
+					
+						// Update pageWidth and itemWidth dynamically on window resize
+						function updateDimensions() {
+							pageWidth = Math.floor(1 * window.innerWidth); // Update page width dynamically
+							items = document.querySelectorAll(".item_new"); // Re-select items in case layout changes
+							itemWidth = items[0].offsetWidth; // Update item width dynamically
+						}
+						window.addEventListener("resize", updateDimensions);
 					
 						// Auto-rotation interval ID
 						let autoRotationInterval;
@@ -213,13 +222,13 @@
 							if (direction === "previous") {
 								// If at the start, jump to the end
 								if (list.scrollLeft <= 0) {
-									list.scrollBy({ left: (totalItems - 1) * itemWidth, behavior: "smooth" });
+									list.scrollBy({ left: (totalItems - (pageWidth / itemWidth)) * itemWidth, behavior: "smooth" });
 								} else {
 									list.scrollBy({ left: -itemWidth, behavior: "smooth" });
 								}
 							} else {
 								// If at the end, jump to the start
-								if (list.scrollLeft >= itemWidth * (totalItems - 2)) {
+								if (list.scrollLeft >= itemWidth * (totalItems - (pageWidth / itemWidth))) {
 									list.scrollBy({ left: -(totalItems - 1) * itemWidth, behavior: "smooth" }); // Jump to the first item
 								} else {
 									list.scrollBy({ left: itemWidth, behavior: "smooth" });
@@ -236,7 +245,7 @@
 					
 							// Start a new interval
 							autoRotationInterval = setInterval(() => {
-								if (list.scrollLeft >= itemWidth * (totalItems - 2)) {
+								if (list.scrollLeft >= itemWidth * (totalItems - (pageWidth / itemWidth))) {
 									list.scrollBy({ left: -(totalItems - 1) * itemWidth, behavior: "smooth" });
 								} else {
 									list.scrollBy({ left: itemWidth, behavior: "smooth" });
@@ -253,9 +262,14 @@
 						document.querySelector(".button--previous").addEventListener("click", () => handleClick("previous"));
 						document.querySelector(".button--next").addEventListener("click", () => handleClick("next"));
 					
+						// Update dimensions initially and when the page loads
+						updateDimensions();
+					
 						// Start auto-rotation when the page loads
 						startAutoRotation();
 					</script>
+					
+
 					
 					
 					
