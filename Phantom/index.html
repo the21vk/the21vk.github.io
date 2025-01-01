@@ -197,8 +197,8 @@
 						  <li class="item_new"><div class="content_new">Item 5</div></li>
 						</ul>
 						<!-- We're calling `handleClick` with a direction argument when the buttons are clicked -->
-						<button onclick="handleClick('previous')" class="button button--previous" type="button">➜</button>
-						<button onclick="handleClick('next')" class="button button--next" type="button"><a class="icon brands style1 fa-solid fa-github"></a></button>
+						<button onclick="handleClick('previous')" class="button button--previous" type="button">PREV</button>
+						<button onclick="handleClick('next')" class="button button--next" type="button">Next</a></button>
 					  </div>
 					  <script>
 						const list = document.querySelector(".list_new");
@@ -206,18 +206,21 @@
 						const itemWidth = items[0].offsetWidth;
 						const totalItems = items.length;
 					
+						// Auto-rotation interval ID
+						let autoRotationInterval;
+					
 						function handleClick(direction) {
 							if (direction === "previous") {
 								// If at the start, jump to the end
 								if (list.scrollLeft <= 0) {
-									list.scrollBy({ left: (totalItems-1)*itemWidth, behavior: "smooth" });
+									list.scrollBy({ left: (totalItems - 1) * itemWidth, behavior: "smooth" });
 								} else {
 									list.scrollBy({ left: -itemWidth, behavior: "smooth" });
 								}
 							} else {
 								// If at the end, jump to the start
 								if (list.scrollLeft >= itemWidth * (totalItems - 2)) {
-									list.scrollBy({ left: -(totalItems-1)*itemWidth, behavior: "smooth" }); // Jump to the first item
+									list.scrollBy({ left: -(totalItems - 1) * itemWidth, behavior: "smooth" }); // Jump to the first item
 								} else {
 									list.scrollBy({ left: itemWidth, behavior: "smooth" });
 								}
@@ -227,13 +230,14 @@
 							pauseAutoRotation();
 						}
 					
-						// Auto-rotation logic
-						let autoRotationInterval;
-					
 						function startAutoRotation() {
+							// Clear any existing interval to prevent multiple intervals
+							clearInterval(autoRotationInterval);
+					
+							// Start a new interval
 							autoRotationInterval = setInterval(() => {
 								if (list.scrollLeft >= itemWidth * (totalItems - 2)) {
-									list.scrollBy({ left: -(totalItems-1)*itemWidth, behavior: "smooth" });
+									list.scrollBy({ left: -(totalItems - 1) * itemWidth, behavior: "smooth" });
 								} else {
 									list.scrollBy({ left: itemWidth, behavior: "smooth" });
 								}
@@ -241,7 +245,7 @@
 						}
 					
 						function pauseAutoRotation() {
-							clearInterval(autoRotationInterval);
+							clearInterval(autoRotationInterval); // Stop the current interval
 							setTimeout(startAutoRotation, 5000); // Restart auto-rotation after 5 seconds
 						}
 					
@@ -252,6 +256,7 @@
 						// Start auto-rotation when the page loads
 						startAutoRotation();
 					</script>
+					
 					
 					
 				<!-- Footer -->
