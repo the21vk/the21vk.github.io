@@ -1812,7 +1812,7 @@ input, select, textarea {
     display: flex;
     gap: 8px;
     padding: 16px;
-    width: 80%;
+    width: 100%;
     list-style: none;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -1829,8 +1829,8 @@ input, select, textarea {
 
 .item_new {
     flex-shrink: 0;
-    width: 50vw; /* Set width relative to viewport width */
-    height: calc(50vw * 9 / 16); /* Maintain a 16:9 aspect ratio */
+    width: 70vw; /* Set width relative to viewport width */
+    height: calc(70vw * 9 / 16); /* Maintain a 16:9 aspect ratio */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1918,12 +1918,13 @@ input, select, textarea {
 	  
 
 	  .button--previous {
-		  left: 14%; /* Position towards the left */
+		  left: 10%; /* Position towards the left */
+		  /* bottom: 20%; */
 		/* transform: rotate(180deg); */
 	  }
 	  
 	  .button--next {
-		  right: 14%; /* Position towards the right */
+		  right: 10%; /* Position towards the right */
 	  }
 
 	  .img_car {
@@ -2707,7 +2708,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -2756,7 +2757,7 @@ input, select, textarea {
 					height: 100%;
 					opacity: 1.0;
 					z-index: 1;
-					opacity: 0.5;
+					opacity: 0.7;
 				}
 
 				.tiles article > .image:after {
@@ -2925,7 +2926,7 @@ input, select, textarea {
 			}
 
 				.tiles article {
-					width: calc(50% - 2.5em);
+					width: calc(40% - 2.5em);
 					margin: 2.5em 0 0 2.5em;
 				}
 
@@ -2954,12 +2955,12 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.tiles {
-				margin: 0;
+				margin: 1.25em 0 0 1.25em;
 			}
 
 				.tiles article {
-					width: 100%;
-					margin: 1.25em 0 0 0;
+					width: calc(80% - 1.25em);
+					margin: 1.25em 0 0 1.25em;
 				}
 
 		}
