@@ -2803,7 +2803,7 @@ input, select, textarea {
 				-ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
 				transition: background-color 0.5s ease, transform 0.5s ease;
 				position: absolute;
-				top: 0;
+				top: 0px;
 				left: 0;
 				width: 100%;
 				height: 100%;
@@ -2826,6 +2826,8 @@ input, select, textarea {
 
 				.tiles article > a h2 {
 					margin: 0;
+					 padding: 4px;
+					 background-color: rgba(255, 255, 255, 0.0);
 				}
 
 				.tiles article > a .content {
@@ -3473,7 +3475,7 @@ input, select, textarea {
 		  }
 		  
 		  .intext:hover {
-			color: #f2849e; /* Color on hover */
+			color: #f2849e !important; /* Color on hover */
 			text-decoration: underline; /* Optional underline on hover */
 		  }
 		  
@@ -3482,5 +3484,5 @@ input, select, textarea {
 		  }
 		  
 		  .intext:active {
-			color: #c86c82; /* Color when actively clicking the link */
+			color: #c86c82 !important; /* Color when actively clicking the link */
 		  }
