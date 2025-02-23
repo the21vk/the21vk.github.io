@@ -2777,7 +2777,7 @@ input, select, textarea {
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
-					opacity: 0.25;
+					opacity: 1.0;
 					z-index: 2;
 				}
 
@@ -2821,7 +2821,7 @@ input, select, textarea {
 				}
 
 				.tiles article > a:hover {
-					color: #ffffff !important;
+					color: #ffffff00 !important;
 				}
 
 				.tiles article > a h2 {
@@ -2839,7 +2839,7 @@ input, select, textarea {
 					max-height: 0;
 					line-height: 1.5;
 					margin-top: 0.35em;
-					opacity: 0;
+					opacity: 1.0;
 				}
 
 					.tiles article > a .content > :last-child {
@@ -2879,7 +2879,7 @@ input, select, textarea {
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
 					background-color: #333333;
-					opacity: 0.35;
+					opacity: 0.0;
 				}
 
 				body:not(.is-touch) .tiles article:hover > .image:after {
