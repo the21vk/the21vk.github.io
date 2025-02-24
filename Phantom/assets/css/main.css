@@ -1830,7 +1830,7 @@ input, select, textarea {
 .item_new {
     flex-shrink: 0;
     width: 70vw; /* Set width relative to viewport width */
-    height: calc(70vw * 9 / 16); /* Maintain a 16:9 aspect ratio */
+    height: calc(70vw * 7.5 / 16); /* Maintain a 16:9 aspect ratio */
     display: flex;
     justify-content: center;
     align-items: center;

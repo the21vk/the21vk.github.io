@@ -14,6 +14,7 @@
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
+    
 </head>
 
 <body class="is-preload">
@@ -75,27 +76,24 @@
 
 
 
-                <div style="">
-                    <h1>Members</h1></div>
-
-                
-
-
-            </div>
+               
         </div>
+        <div class="inner">
         <p>An HTML paragraph containing
-            <md-span>*italic*</md-span> text.</p>
+            <md-span>*italic* This is inline math: $E = mc^2$</md-span> text.</p>
+        </div>
+        
 
         <div class="list-wrapper">
             <ul class="list_new">
                 <li class="item_new">
-                    <div class="content_new"><img class="img_car" src="images/chandru.png"></div>
+                    <div class="content_new"><a href="https://iopscience.iop.org/article/10.3847/2041-8213/ad9f2d"><img class="img_car" src="images/forCarousel/MR_PIC_SG.png"></a></div>
                 </li>
                 <li class="item_new">
-                    <div class="content_new"><img class="img_car" src="images/sandy.jpeg"></div>
+                    <div class="content_new"><a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.108.065201"><img class="img_car" src="images/forCarousel/MRI_Dynamo_TM.png"></a></div>
                 </li>
                 <li class="item_new">
-                    <div class="content_new"><img class="img_car" src="images/forCarousel/2_tubes_vid.gif"></div>
+                    <div class="content_new"><a href = "https://arxiv.org/abs/2412.10065"><img class="img_car" src="images/forCarousel/TMI_Tubes_VK.png"> </a></div>
                 </li>
                 <li class="item_new">
                     <div class="content_new">Item 4</div>
@@ -232,6 +230,17 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    { left: "$$", right: "$$", display: true },
+                    { left: "$", right: "$", display: false }
+                ]
+            });
+        });
+    </script>
 
 </body>
 
