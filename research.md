@@ -20,7 +20,12 @@ I am interested in reconnection as a genuinely three-dimensional process. Much o
 
 One strand of my current work studies tearing-mode-like instabilities in flux-tube-like magnetic configurations. The goal is to understand how reconnection develops when the magnetic field has finite structure along the third dimension, and how this compares with the better-known two-dimensional tearing instability.
 
-This work combines linear stability analysis with direct numerical simulations. The analytical calculations help identify expected growth-rate scalings, while the simulations test those predictions and reveal the non-trivial magnetic-field geometry that emerges after reconnection begins.
+This direction was explored in my 2025 [paper] (https://doi.org/10.1017/S0022377825100494) with Pallavi Bhat in the Journal of Plasma Physics, where we studied the linear regime of the tearing instability in three-dimensional flux-tube-like magnetic configurations using a combination of (semi-) analytical linear stability calculations and direct numerical simulations. The analytical calculations identified expected growth-rate scalings, while the simulations revealed the non-trivial magnetic-field geometry that emerges once reconnection begins.The analytical calculations help identify expected growth-rate scalings, while the simulations test those predictions and reveal the non-trivial magnetic-field geometry that emerges after reconnection begins.
+
+## Plasmoid-mediated reconnection
+
+While the standard tearing mode leads to slow reconnection, with reconnection rates that vanish at astrophysical Lundquist numbers, the plasmoid instability enables a much faster regime with reconnection rates that become nearly independent of the Lundquist number. My latest [preprint] (https://arxiv.org/abs/2605.18946) with Axel Brandenburg investigates how these plasmoid-mediated reconnection rates depend on the magnetic Prandtl number. We find that, in the fully nonlinear regime of the plasmoid instability, the reconnection rate depends only weakly on the magnetic Prandtl number — in contrast to earlier analytical expectations and numerical studies of the linear regime, which suggested a much stronger dependence.
+
 
 ## MHD Turbulence And Dynamos
 
