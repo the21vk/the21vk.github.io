@@ -1,9 +1,9 @@
 <nav class="nav  nav--social">
   {% for link in site.social_links %}
     {% if link[1] != blank %}
-      {% assign id = link[0] | downcase %}
+      {% assign id = link[0] | downcase | replace: " ", "-" %}
       <a href="{{ link[1] }}">
-        {% include icon.html id=id title=id %}
+        {% include icon.html id=id title=link[0] %}
       </a>
     {% endif %}
   {% endfor %}
