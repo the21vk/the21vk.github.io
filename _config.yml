@@ -122,8 +122,8 @@ navigation_header:
   url: /research/
 - title: Publications
   url: /publications/
-- title: Misc Docs
-  url: /misc-docs/
+# - title: Misc Docs
+#   url: /misc-docs/
 
 navigation_footer:
 - title: Email

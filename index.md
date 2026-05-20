@@ -14,6 +14,6 @@ My current work is broadly concerned with the dynamics of magnetic fields in ast
 
 Prior to joining ICTS, I was a Bachelor's student in the Department of Physics at Jamia Millia Islamia, Delhi.
 
-For research details, see the [Research](/research/) page. Publications are listed on [Publications](/publications/), and talks, reports, posters, and other files are collected in [Misc Docs](/misc-docs/).
+For research details, see the [Research](/research/) page. Publications are listed on [Publications](/publications/), and talks, reports, posters, and other files are collected in [Misc Docs](/misc-docs/). 
 
 Email: [the21vk@gmail.com](mailto:the21vk@gmail.com)
