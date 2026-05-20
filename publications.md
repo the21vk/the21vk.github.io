@@ -29,5 +29,5 @@ aside: False
 
 ## Profiles
 
-- [Google Scholar](https://scholar.google.com/citations?view_op=search_authors&mauthors=Vinay+Kumar+ICTS)
+- [Google Scholar](https://scholar.google.com/citations?user=7rpADBsAAAAJ&hl=en)
 - [GitHub](https://github.com/the21vk)
