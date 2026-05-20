@@ -5,7 +5,7 @@ feature_text: |
   Posters, talks, reports, and other documents
 feature_image: "https://picsum.photos/1300/400?image=1067"
 excerpt: "A collection of presentations, term papers, reports, and posters."
-aside: true
+aside: False
 ---
 
 This page is a place to collect PDFs, presentations, posters, and reports. Files can live under `assets/docs/`.

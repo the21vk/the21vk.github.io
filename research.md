@@ -5,7 +5,7 @@ feature_text: |
   Magnetic reconnection, plasma dynamics, and numerical astrophysics
 feature_image: "/assets/images/current_density_yz_slice_x_-0.29114583134651184_cropped.png"
 excerpt: "Research interests and current projects."
-aside: true
+aside: False
 ---
 
 My research focuses on fluid and plasma dynamics in astrophysical settings, with a particular interest in how magnetic fields evolve, reconnect, and influence the large-scale behavior of plasmas.
