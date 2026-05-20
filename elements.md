@@ -2,7 +2,7 @@
 title: Elements
 feature_text: |
   A demo of Markdown and HTML includes
-feature_image: "https://picsum.photos/2560/600?image=873"
+feature_image: "assets/images/current_density_yz_slice_x_-0.29114583134651184_cropped.png"
 excerpt: "A demo of Markdown and HTML includes"
 aside: true
 ---
