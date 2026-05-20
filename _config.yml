@@ -88,7 +88,7 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
 title: "Vinay Kumar" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/site_ico/android-chrome-192x192.png" # Site logo, also used in jekyll-seo-tag
 description: "Personal website of Vinay Kumar, a PhD student working on computational astrophysics, magnetic reconnection, and astrophysical plasma dynamics." # Site description and default description, also used in jekyll-seo-tag
 url: "https://the21vk.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
