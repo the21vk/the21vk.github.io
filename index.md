@@ -3,7 +3,7 @@ title: About
 feature_text: |
   ## Vinay Kumar
   Computational Astrophysicist | International Centre for Theoretical Sciences
-feature_image: "assets/images/current_density_yz_slice_x_-0.29114583134651184_cropped.png"
+feature_image: "/assets/images/current_density_yz_slice_x_-0.29114583134651184_cropped.png"
 excerpt: "Personal website of Vinay Kumar."
 aside: true
 ---
