@@ -20,7 +20,7 @@ I am interested in reconnection as a genuinely three-dimensional process. Much o
 
 One strand of my current work studies tearing-mode-like instabilities in flux-tube-like magnetic configurations. The goal is to understand how reconnection develops when the magnetic field has finite structure along the third dimension, and how this compares with the better-known two-dimensional tearing instability.
 
-This work combines linear stability analysis with direct numerical simulations. The analytical calculations help identify expected growth-rate scalings, while the simulations test those predictions and reveal the nonlinear magnetic-field geometry that emerges after reconnection begins.
+This work combines linear stability analysis with direct numerical simulations. The analytical calculations help identify expected growth-rate scalings, while the simulations test those predictions and reveal the non-trivial magnetic-field geometry that emerges after reconnection begins.
 
 ## MHD Turbulence And Dynamos
 
