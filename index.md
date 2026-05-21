@@ -1,12 +1,16 @@
 ---
 title: About
 feature_text: |
-  <div style="float: right; width: 180px; max-width: 35vw; margin: 0 0 1rem 1.5rem;">
-    <img src="/assets/images/vk.png" alt="Profile picture of Vinay Kumar" style="width: 100%; height: auto; border-radius: 18px; display: block;" />
-  </div>
+  <div style="display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; text-align: left; flex-wrap: wrap-reverse;">
+    <div style="flex: 1 1 260px; min-width: 220px;">
+      <h2 style="margin: 0 0 0.25rem 0;">Vinay Kumar</h2>
+      <p style="margin: 0;">Computational Astrophysicist | International Centre for Theoretical Sciences</p>
+    </div>
 
-  ## Vinay Kumar
-  Computational Astrophysicist | International Centre for Theoretical Sciences
+    <div style="flex: 0 0 160px; width: 160px; max-width: 42vw;">
+      <img src="/assets/images/vk.png" alt="Profile picture of Vinay Kumar" style="width: 100%; height: auto; border-radius: 18px; display: block;" />
+    </div>
+  </div>
 feature_image: "/assets/images/current_density_yz_slice_x_-0.29114583134651184_cropped.png"
 excerpt: "Personal website of Vinay Kumar."
 aside: False
