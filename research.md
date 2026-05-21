@@ -14,8 +14,6 @@ My research focuses on fluid and plasma dynamics in astrophysical settings, with
 
 Magnetic reconnection is a process in which magnetic field lines break and rejoin, changing the topology of the magnetic field and rapidly converting magnetic energy into kinetic energy, heat, and accelerated particles. It is relevant across a wide range of systems, from fusion devices and Earth's magnetosphere to solar flares, astrophysical jets, accretion flows, and gamma-ray bursts.
 
-I am interested in reconnection as a genuinely three-dimensional process. Much of the classical understanding of reconnection comes from two-dimensional models, but astrophysical plasmas are rarely so constrained. My work explores how three-dimensional magnetic-field structure changes the onset, growth, and nonlinear outcome of reconnection.
-
 ## Tearing Instability And Flux-Tube Reconnection
 
 One strand of my current work studies tearing-mode-like instabilities in flux-tube-like magnetic configurations. The goal is to understand how reconnection develops when the magnetic field has finite structure along the third dimension, and how this compares with the better-known two-dimensional tearing instability.

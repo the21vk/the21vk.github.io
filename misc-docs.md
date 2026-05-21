@@ -3,7 +3,7 @@ title: Misc Docs
 feature_text: |
   ## Misc Docs
   Posters, talks, reports, and other documents
-feature_image: "https://picsum.photos/1300/400?image=1067"
+feature_image: "/assets/images/current_density_yz_slice_x_-0.29114583134651184_cropped.png"
 excerpt: "A collection of presentations, term papers, reports, and posters."
 aside: False
 ---
