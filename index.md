@@ -1,6 +1,10 @@
 ---
 title: About
 feature_text: |
+  <div style="max-width: 180px; margin: 0 0 1rem 0;">
+    <img src="/assets/images/vk.png" alt="Profile picture of Vinay Kumar" style="width: 100%; height: auto; border-radius: 18px; display: block;" />
+  </div>
+
   ## Vinay Kumar
   Computational Astrophysicist | International Centre for Theoretical Sciences
 feature_image: "/assets/images/current_density_yz_slice_x_-0.29114583134651184_cropped.png"
