@@ -1,7 +1,7 @@
 ---
 title: About
 feature_text: |
-  <div style="max-width: 180px; margin: 0 0 1rem 0;">
+  <div style="float: right; width: 180px; max-width: 35vw; margin: 0 0 1rem 1.5rem;">
     <img src="/assets/images/vk.png" alt="Profile picture of Vinay Kumar" style="width: 100%; height: auto; border-radius: 18px; display: block;" />
   </div>
 
