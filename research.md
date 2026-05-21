@@ -33,4 +33,4 @@ I also think about magnetohydrodynamic turbulence, dynamos, and their interplay 
 
 ## Methods
 
-My primary tools are high-resolution numerical simulations and pen-and-paper calculations. I work with magnetohydrodynamic models, spectral methods, and stability analysis to connect simplified theoretical problems with plasma behavior relevant to astrophysical systems.
+My primary tools are high-resolution numerical simulations and pen-and-paper calculations. I work with custom as well as open-source codes like Dedalus, The Pencil-Code, Athena++ and AthenaK to connect simplified theoretical problems with plasma behavior relevant to astrophysical systems.
