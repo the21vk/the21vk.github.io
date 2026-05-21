@@ -8,7 +8,7 @@ excerpt: "Personal website of Vinay Kumar."
 aside: False
 ---
 
-I am a research scholar in the Astrophysics and Relativity group at the [International Centre for Theoretical Sciences](https://icts.res.in/) (ICTS), Tata Institute of Fundamental Research. I am working towards my Ph.D. with [Prof. Pallavi Bhat](https://www.icts.res.in/people/pallavi-bhat), focusing on fluid and plasma processes in astrophysical settings. I was also a [Nordita] (https://nordita.org) Visiting PhD fellow during spring 2026.
+I am a research scholar in the Astrophysics and Relativity group at the [International Centre for Theoretical Sciences](https://icts.res.in/) (ICTS), Tata Institute of Fundamental Research. I am working towards my Ph.D. with [Prof. Pallavi Bhat](https://www.icts.res.in/people/pallavi-bhat), focusing on fluid and plasma processes in astrophysical settings. I was also a [Nordita](https://nordita.org) Visiting PhD fellow during spring 2026.
 
 My current work is broadly concerned with the dynamics of magnetic fields in astrophysical plasmas. I study magnetic reconnection, magnetohydrodynamic turbulence, dynamos, and the links between these processes using high-resolution numerical simulations supported by physical insight and analytical calculations.
 
