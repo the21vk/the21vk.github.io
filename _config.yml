@@ -132,6 +132,7 @@ navigation_footer:
   url: https://github.com/the21vk
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
+  ORCID: https://orcid.org/0009-0008-2158-3774
   GitHub: https://github.com/the21vk
   Google Scholar: https://scholar.google.com/citations?user=7rpADBsAAAAJ&hl=en
 

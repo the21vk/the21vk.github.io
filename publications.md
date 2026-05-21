@@ -29,5 +29,6 @@ aside: False
 
 ## Profiles
 
+- [ORCID](https://orcid.org/0009-0008-2158-3774)
 - [Google Scholar](https://scholar.google.com/citations?user=7rpADBsAAAAJ&hl=en)
 - [GitHub](https://github.com/the21vk)

@@ -25,3 +25,4 @@ Prior to joining ICTS, I was a Bachelor's student in the Department of Physics a
 For research details, see the [Research](/research/) page. Publications are listed on [Publications](/publications/), and talks, reports, posters, and other files are collected in [Misc Docs](/misc-docs/). 
 
 Email: [the21vk@gmail.com](mailto:the21vk@gmail.com)
+ORCID: [0009-0008-2158-3774](https://orcid.org/0009-0008-2158-3774)
