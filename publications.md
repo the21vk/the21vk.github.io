@@ -10,15 +10,15 @@ aside: False
 
 ## Submitted
 
-**[5]** **Evolutionary tracks and isochrones of the inverse Hall cascade**  
-  Axel Brandenburg and Vinay Kumar  
-  Submitted to *Journal of Plasma Physics*, 2026  
-  [arXiv](https://arxiv.org/abs/2610.40092)
-
-**[4]** **As a matter of reconstruction -- varying the magnetic Prandtl number in implicit large eddy simulations**  
+**[5]** **As a matter of reconstruction -- varying the magnetic Prandtl number in implicit large eddy simulations**  
   Vinay Kumar and Philipp Grete  
   To be submitted to *The Astrophysical Journal*, 2026  
   [arXiv](https://arxiv.org/abs/2610.41493)
+
+**[4]** **Evolutionary tracks and isochrones of the inverse Hall cascade**  
+  Axel Brandenburg and Vinay Kumar  
+  Submitted to *Journal of Plasma Physics*, 2026  
+  [arXiv](https://arxiv.org/abs/2610.40092)
 
 ## Accepted And Published
 
