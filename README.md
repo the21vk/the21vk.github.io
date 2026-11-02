@@ -7,7 +7,7 @@ Personal website built with Jekyll and GitHub Pages.
 - Home page with a short bio and research overview
 - Research page with current topics and methods
 - Publications page with journal articles and preprints
-- Misc Docs page for talks, posters, reports, and related files
+- CV at `assets/docs/Vinay_Kumar_CV.pdf`
 
 ## Local development
 
@@ -34,7 +34,7 @@ Page content is in the top-level Markdown files:
 - `index.md`
 - `research.md`
 - `publications.md`
-- `misc-docs.md`
+- `bio.md`
 
 Assets such as images, logos, and styles are under `assets/`.
 

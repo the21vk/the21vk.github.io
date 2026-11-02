@@ -26,7 +26,6 @@ exclude:
 plugins:
 - jekyll-sitemap
 - jekyll-mentions
-- jekyll-paginate
 - jekyll-seo-tag
 - jekyll-redirect-from
 - jekyll-feed
@@ -35,13 +34,13 @@ plugins:
 - jemoji
 
 # 3. Gem settings
-paginate: 5 # jekyll-paginate > items per page
-paginate_path: blog/page:num # jekyll-paginate > blog page
 author: Vinay Kumar # jekyll-seo-tag > default author
 social: # jekyll-seo-tag > social overrides
   name: Vinay Kumar # jekyll-seo-tag > real name
   links:  # jekyll-seo-tag > social aliases (sameAs)
     - https://github.com/the21vk
+    - https://orcid.org/0009-0008-2158-3774
+    - https://scholar.google.com/citations?user=7rpADBsAAAAJ&hl=en
 # markdown: CommonMark # Markdown parse settings, CommonMark performs slightly better an others in build time
 # commonmark:
   # options: ["SMART", "FOOTNOTES"]
@@ -92,7 +91,7 @@ logo: "/assets/site_ico/android-chrome-192x192.png" # Site logo, also used in je
 description: "Personal website of Vinay Kumar, a PhD student working on computational astrophysics, magnetic reconnection, and astrophysical plasma dynamics." # Site description and default description, also used in jekyll-seo-tag
 url: "https://the21vk.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
-repo: "https://github.com/the21vk/the21vk.github.io-new"
+repo: "https://github.com/the21vk/the21vk.github.io"
 email: "the21vk@gmail.com"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
@@ -122,11 +121,12 @@ navigation_header:
   url: /research/
 - title: Publications
   url: /publications/
-# - title: Misc Docs
-#   url: /misc-docs/
+- title: Bio
+  url: /bio/
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
-  Email: mailto:the21vk@gmail.com
+  Email (institute): mailto:vinay.kumar@icts.res.in
+  Email (personal): mailto:the21vk@gmail.com
   ORCID: https://orcid.org/0009-0008-2158-3774
   GitHub: https://github.com/the21vk
   Google Scholar: https://scholar.google.com/citations?user=7rpADBsAAAAJ&hl=en

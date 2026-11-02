@@ -8,24 +8,34 @@ excerpt: "Publications and preprints."
 aside: False
 ---
 
-## Journal Articles
+## Submitted
 
-2. **Closure invariants for polarised radio interferometric observations: a graph theoretical approach**  
+**[5]** **Evolutionary tracks and isochrones of the inverse Hall cascade**  
+  Axel Brandenburg and Vinay Kumar  
+  Submitted to *Journal of Plasma Physics*, 2026  
+  [arXiv](https://arxiv.org/abs/2610.40092)
+
+**[4]** **As a matter of reconstruction -- varying the magnetic Prandtl number in implicit large eddy simulations**  
+  Vinay Kumar and Philipp Grete  
+  To be submitted to *The Astrophysical Journal*, 2026  
+  [arXiv](https://arxiv.org/abs/2610.41493)
+
+## Accepted And Published
+
+**[3]** **Magnetic Prandtl number dependence of plasmoid-mediated reconnection**  
+  Vinay Kumar and Axel Brandenburg  
+  *Journal of Plasma Physics*, accepted, 2026  
+  [arXiv](https://arxiv.org/abs/2605.18946)
+
+**[2]** **Closure invariants for polarised radio interferometric observations: a graph theoretical approach**  
   Vinay Kumar, Rajaram Nityananda, and Joseph Samuel  
-  *Journal of Astrophysics and Astronomy*, 46, 56, 2025         
+  *Journal of Astrophysics and Astronomy*, 46(2), 56, 2025  
   [Journal](https://doi.org/10.1007/s12036-025-10081-9) · [arXiv](https://arxiv.org/abs/2406.12678)
 
-1. **Three-dimensional tearing instability of flux-tube-like magnetic fields**  
+**[1]** **Three-dimensional tearing instability of flux-tube-like magnetic fields**  
   Vinay Kumar and Pallavi Bhat  
-  *Journal of Plasma Physics*, 91, E99, 2025        
+  *Journal of Plasma Physics*, 91, E99, 2025  
   [Journal](https://doi.org/10.1017/S0022377825100494) · [arXiv](https://arxiv.org/abs/2412.10065)
-
-## Preprints
-
-1. **Magnetic Prandtl number dependence of plasmoid-mediated reconnection**  
-  Vinay Kumar and Axel Brandenburg
-  arXiv, 2026      
-  [arXiv](https://arxiv.org/abs/2605.18946)
 
 ## Profiles
 
