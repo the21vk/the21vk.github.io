@@ -3,7 +3,7 @@ title: Research
 feature_text: |
   ## Research
   Magnetic reconnection, plasma dynamics, and numerical astrophysics
-feature_image: "/assets/images/Plasmoid-sheet.jpg"
+feature_image: "/assets/images/pasted-movie.png"
 excerpt: "Research interests and current projects."
 aside: False
 ---
