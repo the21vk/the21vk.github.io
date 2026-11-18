@@ -8,7 +8,10 @@ excerpt: "Personal website of Vinay Kumar."
 aside: False
 ---
 
-<img src="/assets/images/vk.png" alt="Profile picture of Vinay Kumar" style="float: right; width: 190px; max-width: 38vw; height: auto; border-radius: 18px; margin: 0.3rem 0 1rem 1.5rem;" />
+<figure style="float: right; width: 190px; max-width: 38vw; margin: 0.3rem 0 1rem 1.5rem;">
+  <img src="/assets/images/vk.png" alt="Profile picture of Vinay Kumar" style="display: block; width: 100%; height: auto; border-radius: 18px; margin: 0;" />
+  <figcaption style="margin-top: 0.35rem; font-size: 0.75rem; line-height: 1.3; color: #888; text-align: center;">Photo: Santhiya P S</figcaption>
+</figure>
 
 I am a research scholar in the Astrophysics and Relativity group at the [International Centre for Theoretical Sciences](https://icts.res.in/) (ICTS), Tata Institute of Fundamental Research. I am working towards my Ph.D. with [Prof. Pallavi Bhat](https://www.icts.res.in/people/pallavi-bhat), focusing on fluid and plasma processes in astrophysical settings.
 
