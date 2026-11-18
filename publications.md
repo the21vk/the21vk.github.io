@@ -1,8 +1,6 @@
 ---
 title: Publications
-feature_text: |
-  ## Publications
-  Papers, preprints, and research articles
+subtitle: Papers, preprints, and research articles
 feature_image: "/assets/images/current_density_yz_slice_x_-0.29114583134651184_cropped.png"
 excerpt: "Publications and preprints."
 aside: False

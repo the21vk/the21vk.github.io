@@ -8,7 +8,12 @@ layout: default
 
   <article class="article  article--page  content  typeset">
 
-    <h1>{{ page.title }}</h1>
+    <header class="page-header">
+      <h1 class="page-header__title">{{ page.heading | default: page.title }}</h1>
+      {% if page.subtitle %}
+        <p class="page-header__subtitle">{{ page.subtitle | escape | split: " | " | join: '<span class="page-header__sep" aria-hidden="true"></span>' }}</p>
+      {% endif %}
+    </header>
 
     {{ content }}
 

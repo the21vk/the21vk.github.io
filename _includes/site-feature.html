@@ -1,15 +1,16 @@
-{% assign feature_text = page.feature_text %}
+{% comment %}
+  Image-only banner. Page titles and subtitles are rendered below it by the
+  page layout (see .page-header in _layouts/page.html) so text never sits on
+  top of a busy simulation image.
+{% endcomment %}
 {% assign feature_image = page.feature_image %}
+{% assign feature_alt = page.feature_alt %}
 {% if page.collectionpage %}
   {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
-  {% assign feature_text = collectiondata.feature_text %}
   {% assign feature_image = collectiondata.feature_image %}
+  {% assign feature_alt = collectiondata.feature_alt %}
 {% endif %}
 
-{% if feature_text or feature_image %}
-  <div class="feature"{% if feature_image %} style="background-image: url({{ feature_image }})"{% endif %}>
-    <div class="container  typeset">
-      {{ feature_text | markdownify }}
-    </div>
-  </div>
+{% if feature_image %}
+  <div class="feature"{% if feature_alt %} role="img" aria-label="{{ feature_alt | escape }}"{% else %} aria-hidden="true"{% endif %} style="background-image: url({{ feature_image | relative_url }})"></div>
 {% endif %}

@@ -1,8 +1,7 @@
 ---
 title: About
-feature_text: |
-  <h2 style="margin: 0 0 0.25rem 0;">Vinay Kumar</h2>
-  <p style="margin: 0;">Computational Astrophysicist | International Centre for Theoretical Sciences</p>
+heading: Vinay Kumar
+subtitle: Computational Astrophysicist | International Centre for Theoretical Sciences
 feature_image: "/assets/images/Plasmoid-sheet.jpg"
 excerpt: "Personal website of Vinay Kumar."
 aside: False

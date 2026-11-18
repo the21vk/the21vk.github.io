@@ -43,18 +43,64 @@ body {
   overflow: hidden;
 }
 
+// Image-only banner; the page title lives below it in .page-header.
 .feature {
-  padding-bottom: .4rem;
-  margin-bottom: 1.6rem;
-  text-align: center;
-  background: $featureBackgroundColour;
+  position: relative;
+  height: clamp(140px, min(30vh, 40vw), 320px);
+  background-color: $featureBackgroundColour;
   background-size: cover;
   background-position: center;
-  .container {
-    min-height: 35vh;
-    max-width: 60%;
-    @include flex-direction(column);
-    @include justify-content(center);
+  // Fade the bottom edge of the image into the page background.
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba($backgroundColour, 0) 55%, $backgroundColour 100%);
+    pointer-events: none;
+  }
+}
+
+// Page title block, aligned with the content column.
+.typeset .page-header {
+  margin: 1.6rem 0 2.2rem;
+
+  .page-header__title {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    font-size: clamp(2.1rem, 1.5rem + 2.4vw, 3rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+
+  .page-header__subtitle {
+    margin: .55rem 0 0;
+    padding: 0;
+    top: 0;
+    color: $captionColour;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+
+  .page-header__sep {
+    display: inline-block;
+    width: .32em;
+    height: .32em;
+    margin: 0 .6em;
+    border-radius: 50%;
+    background: $accentColour;
+    vertical-align: middle;
+  }
+
+  // Short accent rule, cyan to gold like the simulation colour maps.
+  &::after {
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: 3px;
+    margin-top: 1.1rem;
+    border-radius: 2px;
+    background: linear-gradient(to right, $accentColour, $hoverColour);
   }
 }
 
